@@ -1,0 +1,8 @@
+{
+  "name": "Thakan Finance",
+  "description": "A clean and minimalistic landing page for Thakan Finance, featuring an interactive EMI calculator and smooth hover effects.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
