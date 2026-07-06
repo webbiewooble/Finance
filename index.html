@@ -138,8 +138,30 @@
 </head>
 <body class="overflow-x-hidden">
 
+    <!-- Announcement Banner -->
+    <div class="bg-brand-orange text-white text-[11px] sm:text-xs py-2 px-4 text-center font-medium tracking-wide relative z-50">
+        <span class="mr-2">🚨</span> Security Alert: Thakan Finance never asks for your OTP, PIN, or password. Beware of fraudsters.
+    </div>
+
+    <!-- Utility Bar -->
+    <div class="bg-brand-navy text-white/90 text-xs py-2.5 px-6 hidden md:flex justify-between items-center relative z-50 border-b border-brand-navyDark">
+        <div class="max-w-7xl mx-auto w-full flex justify-between items-center">
+            <div class="flex items-center gap-6">
+                <a href="#" class="hover:text-white transition-colors flex items-center gap-2"><i class="fas fa-phone-alt"></i> 1800-123-4567</a>
+                <a href="#" class="hover:text-white transition-colors flex items-center gap-2"><i class="fas fa-envelope"></i> care@thakanfinance.com</a>
+            </div>
+            <div class="flex items-center gap-6">
+                <a href="#" class="hover:text-white transition-colors">Dealer Locator</a>
+                <a href="#" class="hover:text-white transition-colors">Newsroom</a>
+                <a href="#" class="hover:text-white transition-colors">Quick Pay</a>
+                <div class="w-px h-3 bg-white/20"></div>
+                <a href="#" class="hover:text-white transition-colors font-semibold flex items-center gap-1"><i class="fas fa-user-circle text-sm"></i> Login</a>
+            </div>
+        </div>
+    </div>
+
     <!-- Header -->
-    <header class="w-full py-6 bg-brand-surface z-50 relative border-b border-gray-50/50">
+    <header class="w-full py-5 bg-brand-surface z-40 relative border-b border-gray-50/50 shadow-[0_4px_20px_rgba(11,32,62,0.03)]">
         <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
             <!-- Logo -->
             <a href="#" class="flex items-center gap-3 group">
@@ -472,6 +494,91 @@
                         </button>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Get in Touch -->
+    <section class="py-20 px-6 bg-brand-surface border-t border-gray-100">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-12 reveal">
+                <h2 class="text-3xl font-heading font-bold text-brand-navy mb-4">Get in Touch</h2>
+                <p class="text-brand-muted text-sm">We are here to help you every step of the way.</p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 lg:gap-6">
+                <!-- Contact Cards -->
+                <a href="#" class="bg-white p-6 rounded-corporate border border-gray-100 shadow-sm hover:shadow-md transition-shadow text-center group reveal">
+                    <div class="w-12 h-12 mx-auto bg-brand-surface border border-gray-50 rounded-full flex items-center justify-center text-brand-navy mb-4 group-hover:bg-brand-navy group-hover:text-white transition-colors">
+                        <i class="fas fa-phone-alt text-lg"></i>
+                    </div>
+                    <h4 class="font-semibold text-brand-navy text-sm mb-1">Customer Care</h4>
+                    <p class="text-xs text-brand-muted">1800-123-4567</p>
+                </a>
+                
+                <!-- WhatsApp -->
+                <a href="#" class="bg-white p-6 rounded-corporate border border-gray-100 shadow-sm hover:shadow-md transition-shadow text-center group reveal delay-100">
+                    <div class="w-12 h-12 mx-auto bg-brand-surface border border-gray-50 rounded-full flex items-center justify-center text-[#25D366] mb-4 group-hover:bg-[#25D366] group-hover:text-white transition-colors">
+                        <i class="fab fa-whatsapp text-xl"></i>
+                    </div>
+                    <h4 class="font-semibold text-brand-navy text-sm mb-1">WhatsApp</h4>
+                    <p class="text-xs text-brand-muted">+91 98765 43210</p>
+                </a>
+                
+                <!-- Email -->
+                <a href="#" class="bg-white p-6 rounded-corporate border border-gray-100 shadow-sm hover:shadow-md transition-shadow text-center group reveal delay-200">
+                    <div class="w-12 h-12 mx-auto bg-brand-surface border border-gray-50 rounded-full flex items-center justify-center text-brand-navy mb-4 group-hover:bg-brand-navy group-hover:text-white transition-colors">
+                        <i class="far fa-envelope text-lg"></i>
+                    </div>
+                    <h4 class="font-semibold text-brand-navy text-sm mb-1">Write To Us</h4>
+                    <p class="text-xs text-brand-muted">care@thakan.com</p>
+                </a>
+                
+                <!-- Portal -->
+                <a href="#" class="bg-white p-6 rounded-corporate border border-gray-100 shadow-sm hover:shadow-md transition-shadow text-center group reveal delay-300">
+                    <div class="w-12 h-12 mx-auto bg-brand-surface border border-gray-50 rounded-full flex items-center justify-center text-brand-navy mb-4 group-hover:bg-brand-navy group-hover:text-white transition-colors">
+                        <i class="fas fa-laptop-house text-lg"></i>
+                    </div>
+                    <h4 class="font-semibold text-brand-navy text-sm mb-1">Customer Portal</h4>
+                    <p class="text-xs text-brand-muted">Login Now</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- App Banner -->
+    <section class="bg-brand-navyDark border-b border-white/10">
+        <div class="max-w-6xl mx-auto px-6 py-12 md:py-16 flex flex-col md:flex-row items-center justify-between gap-8 reveal">
+            <div class="text-center md:text-left">
+                <h2 class="text-2xl md:text-3xl font-heading font-bold text-white mb-3">Finance at your fingertips</h2>
+                <p class="text-gray-400 text-sm md:text-base max-w-xl">Download the Thakan Finance app for seamless payments, effortless account access, and real-time tracking.</p>
+            </div>
+            <div class="flex gap-4">
+                <a href="#" class="bg-white/10 hover:bg-white/20 transition-colors border border-white/20 rounded-corporate px-5 py-3 flex items-center gap-3">
+                    <i class="fab fa-google-play text-white text-2xl"></i>
+                    <div class="text-left">
+                        <div class="text-[10px] text-gray-300 uppercase leading-none mb-1">Get it on</div>
+                        <div class="text-sm text-white font-semibold leading-none">Google Play</div>
+                    </div>
+                </a>
+                <a href="#" class="bg-white/10 hover:bg-white/20 transition-colors border border-white/20 rounded-corporate px-5 py-3 flex items-center gap-3">
+                    <i class="fab fa-apple text-white text-2xl"></i>
+                    <div class="text-left">
+                        <div class="text-[10px] text-gray-300 uppercase leading-none mb-1">Download on the</div>
+                        <div class="text-sm text-white font-semibold leading-none">App Store</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Strip -->
+    <section class="bg-brand-navy py-8 px-6 border-b border-white/10">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 reveal">
+            <h3 class="text-xl md:text-2xl font-heading font-bold text-white text-center md:text-left">Sign up for latest updates and offers</h3>
+            <div class="flex flex-col sm:flex-row w-full md:w-auto gap-3">
+                <input type="text" placeholder="Enter Your Full Name" class="px-4 py-3 rounded-corporate text-sm w-full md:w-48 focus:outline-none focus:ring-2 focus:ring-brand-orange text-brand-navy">
+                <input type="email" placeholder="Enter Your Email Address" class="px-4 py-3 rounded-corporate text-sm w-full md:w-56 focus:outline-none focus:ring-2 focus:ring-brand-orange text-brand-navy">
+                <button class="btn-primary px-6 py-3 rounded-corporate text-sm font-semibold tracking-wide whitespace-nowrap">Subscribe</button>
             </div>
         </div>
     </section>
