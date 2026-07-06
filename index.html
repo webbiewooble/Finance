@@ -384,38 +384,44 @@
         </div>
     </footer>
 
-    <!-- Floating Quick Apply (Left) -->
-    <div class="fixed left-0 top-[45%] z-50 hidden md:block">
-        <button class="bg-primary text-white py-6 px-1.5 rounded-r-md shadow-lg font-semibold vertical-text text-sm hover:bg-primary-dark transition-colors flex items-center gap-2">
-            Quick Apply
+    <!-- Floating Action Cluster (Bottom Right) -->
+    <div class="fixed right-6 bottom-6 z-50 flex flex-col items-end space-y-3 group">
+        <!-- Secondary Actions (Reveal on hover of the container area, or just keep them visible but subtle) -->
+        <!-- Let's keep them visible but sleek -->
+        <div class="flex flex-col items-center space-y-3 mr-2 mb-2">
+            <a href="#" class="bg-white text-primary w-12 h-12 rounded-full shadow-lg flex items-center justify-center hover:bg-primary hover:text-white transition-all duration-300 border border-gray-100 relative custom-tooltip">
+                <i class="fas fa-file-signature text-[1.1rem]"></i>
+                <span class="absolute right-full mr-3 bg-gray-900 text-white text-xs font-medium px-2.5 py-1.5 rounded opacity-0 invisible transition-all whitespace-nowrap shadow-sm">Quick Apply</span>
+            </a>
+            
+            <a href="#" class="bg-white text-[#25D366] w-12 h-12 rounded-full shadow-lg flex items-center justify-center hover:bg-[#25D366] hover:text-white transition-all duration-300 border border-gray-100 relative custom-tooltip">
+                <i class="fab fa-whatsapp text-xl"></i>
+                <span class="absolute right-full mr-3 bg-gray-900 text-white text-xs font-medium px-2.5 py-1.5 rounded opacity-0 invisible transition-all whitespace-nowrap shadow-sm">WhatsApp</span>
+            </a>
+            
+            <a href="#" class="bg-white text-secondary w-12 h-12 rounded-full shadow-lg flex items-center justify-center hover:bg-secondary hover:text-white transition-all duration-300 border border-gray-100 relative custom-tooltip">
+                <i class="fas fa-mobile-alt text-xl"></i>
+                <span class="absolute right-full mr-3 bg-gray-900 text-white text-xs font-medium px-2.5 py-1.5 rounded opacity-0 invisible transition-all whitespace-nowrap shadow-sm">Get App</span>
+            </a>
+        </div>
+        
+        <!-- Main Chat/Help Button -->
+        <button class="bg-gray-900 text-white w-16 h-16 rounded-full shadow-[0_8px_30px_rgb(0,0,0,0.3)] flex items-center justify-center hover:scale-105 hover:bg-gray-800 transition-all duration-300 border-[3px] border-white relative custom-tooltip">
+            <i class="fas fa-headset text-2xl text-secondary"></i>
+            <span class="absolute right-full mr-4 bg-gray-900 text-white text-sm font-bold px-3 py-2 rounded opacity-0 invisible transition-all whitespace-nowrap shadow-md">Talk to Support</span>
         </button>
     </div>
-
-    <!-- Floating Actions (Right) -->
-    <div class="fixed right-0 top-[35%] md:top-[40%] z-50 hidden md:flex flex-col space-y-2.5 pr-2">
-        <!-- WhatsApp -->
-        <button class="bg-[#25D366] text-white w-[48px] h-[48px] rounded-l-full shadow-md flex items-center justify-center hover:-translate-x-2 transition-transform" aria-label="WhatsApp">
-            <i class="fab fa-whatsapp text-[28px] ml-1"></i>
-        </button>
-        <!-- App -->
-        <button class="bg-secondary text-white w-[48px] h-[48px] rounded-l-full shadow-md flex items-center justify-center hover:-translate-x-2 transition-transform" aria-label="Mobile App">
-            <i class="fas fa-mobile-alt text-2xl ml-1"></i>
-        </button>
-        <!-- Help -->
-        <button class="bg-primary text-white w-[48px] h-[48px] rounded-l-full shadow-md flex items-center justify-center hover:-translate-x-2 transition-transform" aria-label="Help">
-            <i class="fas fa-question text-xl ml-1"></i>
-        </button>
-    </div>
-
-    <!-- Floating Chat (Bottom Right) -->
-    <div class="fixed right-6 bottom-6 z-50 hidden md:block">
-        <button class="bg-gray-900 text-white w-[72px] h-[72px] rounded-full shadow-2xl flex flex-col items-center justify-center hover:scale-105 transition-transform relative group border-4 border-white">
-            <i class="fas fa-headset text-2xl mb-0.5 text-secondary"></i>
-            <span class="font-bold leading-tight text-center text-[10px] uppercase tracking-wider">Help</span>
-            <!-- Bubble tail -->
-            <div class="absolute -bottom-[4px] -left-[4px] w-0 h-0 border-t-[16px] border-t-gray-900 border-l-[16px] border-l-transparent transform rotate-[15deg]"></div>
-        </button>
-    </div>
+    
+    <style>
+        .custom-tooltip:hover span {
+            opacity: 1;
+            visibility: visible;
+            transform: translateX(0);
+        }
+        .custom-tooltip span {
+            transform: translateX(5px);
+        }
+    </style>
 
     <!-- Scripts -->
     <script>
